@@ -1,0 +1,14 @@
+<li>
+    <div class="card_image">
+        <a {% if include.link_href %} href="{{include.link_href}}" {% endif %}>
+            <img src="{{include.image}}" alt="image"/>
+        </a>
+    </div>
+    <div class="card_text">
+        <b>{{include.title}}</b>
+        <p>{{include.description}}</p>
+        {% if include.link_text %}
+            <p class="link">Link: <a href="{{include.link_href}}">{{include.link_text}}</a></p>
+        {% endif %}
+    </div>
+</li>
