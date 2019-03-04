@@ -7,8 +7,15 @@
     <div class="card_text">
         <b>{{include.title}}</b>
         <p>{{include.description}}</p>
+
         {% if include.link_text %}
-            <p class="link">Link: <a href="{{include.link_href}}">{{include.link_text}}</a></p>
+            <p class="link">Code: <a href="{{include.link_href}}">{{include.link_text}}</a>
+
+            {% if include.link_2_text %}
+                <a href="{{include.link_2_href}}">{{include.link_2_text}}</a>
+            {% endif %}
+
+            </p>
         {% endif %}
     </div>
 </li>
