@@ -1,10 +1,17 @@
+
+/*
+ *    BODY
+ */
 body {
     margin: 60px auto;
-    width: 85%;
+    width: 95%;
+    max-width: 1050px;
 }
 
 
-
+/*
+ *    NAVIGATION BAR
+ */
 nav {
     text-align: center;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, .3);
@@ -36,62 +43,78 @@ nav ul li a:hover {
 }
 
 
-.section {
+
+/*
+ *    SECTION
+ */
+div.section {
     text-align: center;
 }
 
-.boxes {
-    display: flex;
-}
 
-.grid{
-    width: 100%;
-    display: flex;
+ 
+
+/*
+ *    CARDS SMALL
+ */
+ul.grid {
+
+    /* me */
+    margin: 20px;
+    padding: 0px;
     list-style: none;
+    
+    /* children */
+    display: flex; /**/
     flex-wrap: wrap;
     justify-content: center;
-
-    // background: red;
-    margin: 20px;
-    padding: 20px;
-    max-width: 1200px;
-
 }
 
-.grid li {
-    border: 2px solid #E2E2E2;
-    border-radius: 3px;
-
-    flex: 0 0 auto;
-    position: relative;
-    margin: 10px;
-
+ul.grid li {
+    /* me */
     width: 300px;
     height: 300px;
+    margin: 10px;
+    border: 2px solid #E2E2E2;
+    border-radius: 3px;
+    /* flex: 0 0 auto;      /* grow (0), shirnk (0), init-size (auto) */
+
+    /* children */
+    position: relative;/* makes .link position:absolute work relative to this */
 }
 
-.grid li:hover {
+ul.grid li:hover {
+    /* x-offset, y-offset, blur-radius, color */
     box-shadow: 0px 0px 8px rgba(0, 0, 0, .9);
 }
 
-.card_image{
+ul.grid div.card_image{    
     width: 100%;
     height: 150px;
 }
-.card_image img{
+
+ul.grid div.card_image img{
     width: 100%;
     height: 100%;
 }
 
-.card_text{
+ul.grid div.card_text{
     padding: 10px;
     font-size: 80%;
 }
-.link{
-    position: absolute;
+
+ul.grid div.card_text p.link{
+    position: absolute; /**/
     bottom: 0px;
     left: 10px;
 }
+
+
+/* debug /**/
+/* background: red;  /**/
+/* border: 2px solid black;  /**/  
+
+
 
 
 /*nav ul, footer ul {
