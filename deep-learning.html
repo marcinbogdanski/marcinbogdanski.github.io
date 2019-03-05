@@ -188,7 +188,7 @@ layout: default
             title="Many-2-Many LSTM"
             description="Many-to-many LSTM trained to perform English to French translation."
             link_text="Keras"
-            link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/2210_Many2Many_EngFr.html"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/2210_Many2Many_EngFr.html"
             %}
 
         {% include card.html
@@ -196,7 +196,43 @@ layout: default
             title="Seq-2-Seq LSTM"
             description="Sequence-to-sequence LSTM trained to perform English to French translation."
             link_text="Keras"
-            link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/2310_Seq2Seq_EngFr.html"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/2310_Seq2Seq_EngFr.html"
+            %}
+
+    </ul>
+</div>
+
+
+
+{% include section.html
+    header="Generative Adversarial Networks"
+    description="Implementaitons of simple GAN architectures" %}
+
+<div class="boxes">
+    <ul class="grid">
+
+        {% include card.html
+            image="/assets/images/autoencoder.jpg"
+            title="Autoencoder"
+            description="Simple autoencoder trained on MNIST dataset."
+            link_text="Keras"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/Keras/3010_AE_MNIST.html"
+            %}
+
+        {% include card.html
+            image="/assets/images/gan.jpg"
+            title="GAN"
+            description="Fully connected Generative Adversarial Network trained on MNIST dataset."
+            link_text="Keras"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/Keras/3110_GAN_FC_MNIST.html"
+            %}
+
+        {% include card.html
+            image="/assets/images/dcgan.jpg"
+            title="DCGAN"
+            description="Deep Convolutional GAN trained on CelebA dataset."
+            link_text="PyTorch"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/3210_DCGAN.html"
             %}
 
     </ul>
