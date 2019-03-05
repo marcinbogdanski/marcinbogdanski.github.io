@@ -128,20 +128,38 @@ layout: default
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1250_Aug_CIFAR10.html"
             %}
 
+
         {% include card.html
             image="/assets/images/oxford.jpg"
             title="ResNet-50 from Scratch"
-            description="Small convnet with batch normalization used on CIFAR-10 dataset."
+            description="ResNet-50 implemented from scratch using Keras functional API. Then trained from scratch on Oxford VGG Flowers 17 dataset."
             link_text="Keras"
-            link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1200_CNN_BN_CIFAR10.html"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1300_ResNet50_Scratch.html"
             %}
 
         {% include card.html
             image="/assets/images/oxford.jpg"
             title="ResNet-50 Transfer Learning"
-            description="Small convnet with data augumentation to reduce overfitting on CIFAR-10 dataset."
+            description="ResNet-50 from Keras library pre-trained on ImageNet is further trained on Oxford VGG Flowers 17 dataset."
             link_text="Keras"
-            link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1250_Aug_CIFAR10.html"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1400_ResNet50_Transfer.html"
+            %}
+
+
+        {% include card.html
+            image="/assets/images/oxford.jpg"
+            title="DenseNet-201 Transfer Learning"
+            description="DenseNet-201 trained on Oxford VGG Flowers 102 dataset."
+            link_text="PyTorch"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/1450_DenseNet121_Transfer.html"
+            %}
+
+        {% include card.html
+            image="/assets/images/oxford.jpg"
+            title="DenseNet-201 Bottleneck Features"
+            description="DenseNet-201 trained on Oxford VGG Flowers 102 dataset. This time bottleneck features are pre-computed and only classifier is trianed."
+            link_text="PyTorch"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/1450_DenseNet121_Transfer_2.html"
             %}
 
     </ul>
