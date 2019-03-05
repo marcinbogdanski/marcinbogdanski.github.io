@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% include section.html
-    header="NumPy Fun"
+    header="NumPy Implementations"
     description="Quick implementation of basic neural network building blocks in pure <em>NumPy</em>" %}
 
 <div class="boxes">
@@ -57,14 +57,14 @@ layout: default
 
 
 {% include section.html
-    header="Intro to Neural Network frameworks"
+    header="Intro to Neural Networks"
     description="Simple implementations of basic neural networks in both <em>Keras</em> and <em>PyTorch</em>" %}
 
 <div class="boxes">
     <ul class="grid">
 
         {% include card.html
-            image="/assets/images/mlp_college.jpg"
+            image="/assets/images/college.jpg"
             title="College Admissions"
             description="2-Layer fully connected neural network used to solve college admissions problem. Dataset is tabular. Task is to predict if student is admited or not based no theirs GPC & GPA scores"
             link_text="Keras"
@@ -74,7 +74,7 @@ layout: default
             %}
 
         {% include card.html
-            image="/assets/images/mlp_mnist.jpg"
+            image="/assets/images/mnist.jpg"
             title="MNIST"
             description="2-Layer fully connected neural network used to solve popular MNIST dataset. MNIST is set of 60k images. Each one is 28x28 grayscale"
             link_text="Keras"
@@ -84,11 +84,64 @@ layout: default
             %}
 
         {% include card.html
-            image="/assets/images/mlp_imbd.jpg"
-            title="IMBD Movie Reviews"
+            image="/assets/images/imdb.jpg"
+            title="IMDB Movie Reviews"
             description="Small fully connected neural network used to predict if movie review is positive or negative. Uses bag-of-words approach."
             link_text="Keras"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/0150_MLP_IMBD.html"
+            %}
+
+    </ul>
+</div>
+
+
+
+
+{% include section.html
+    header="Computer Vision"
+    description="Various computer vision architectures" %}
+
+<div class="boxes">
+    <ul class="grid">
+
+        {% include card.html
+            image="/assets/images/cifar10.jpg"
+            title="ConvNet and CIFAR-10"
+            description="Small convolutional neural network used for image classification on the CIFAR-10 dataset. Images are RGB 32x32 pixels."
+            link_text="Keras"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1100_CNN_CIFAR10.html"
+            %}
+
+        {% include card.html
+            image="/assets/images/cifar10.jpg"
+            title="Batch Normalization"
+            description="Small convnet with batch normalization used on CIFAR-10 dataset."
+            link_text="Keras"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1200_CNN_BN_CIFAR10.html"
+            %}
+
+        {% include card.html
+            image="/assets/images/cifar10.jpg"
+            title="Data Augumentation"
+            description="Small convnet with data augumentation to reduce overfitting on CIFAR-10 dataset."
+            link_text="Keras"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1250_Aug_CIFAR10.html"
+            %}
+
+        {% include card.html
+            image="/assets/images/oxford.jpg"
+            title="ResNet-50 from Scratch"
+            description="Small convnet with batch normalization used on CIFAR-10 dataset."
+            link_text="Keras"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1200_CNN_BN_CIFAR10.html"
+            %}
+
+        {% include card.html
+            image="/assets/images/oxford.jpg"
+            title="ResNet-50 Transfer Learning"
+            description="Small convnet with data augumentation to reduce overfitting on CIFAR-10 dataset."
+            link_text="Keras"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1250_Aug_CIFAR10.html"
             %}
 
     </ul>
