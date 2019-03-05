@@ -45,6 +45,7 @@ nav ul li a:hover {
 }
 
 .grid{
+    width: 100%;
     display: flex;
     list-style: none;
     flex-wrap: wrap;
