@@ -129,6 +129,7 @@ layout: default
             %}
 
 
+
         {% include card.html
             image="/assets/images/oxford.jpg"
             title="ResNet-50 from Scratch"
@@ -144,6 +145,7 @@ layout: default
             link_text="Keras"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1400_ResNet50_Transfer.html"
             %}
+
 
 
         {% include card.html
@@ -162,9 +164,43 @@ layout: default
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/1450_DenseNet121_Transfer_2.html"
             %}
 
+        {% include card.html
+            image="/assets/images/segnet.jpg"
+            title="Segnet and VOC2007"
+            description="Segnet on VGG16 backbone trained on Pascal VOC2007 dataset."
+            link_text="PyTorch"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/1630_SegNet_VOC2007.html"
+            %}
+
     </ul>
 </div>
 
+
+{% include section.html
+    header="Natural Language Processing"
+    description="Various recurrent architectures for NLP" %}
+
+<div class="boxes">
+    <ul class="grid">
+        
+        {% include card.html
+            image="/assets/images/rnn_m2m.jpg"
+            title="Many-2-Many LSTM"
+            description="Many-to-many LSTM trained to perform English to French translation."
+            link_text="Keras"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/2210_Many2Many_EngFr.html"
+            %}
+
+        {% include card.html
+            image="/assets/images/rnn_s2s.jpg"
+            title="Seq-2-Seq LSTM"
+            description="Sequence-to-sequence LSTM trained to perform English to French translation."
+            link_text="Keras"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/2310_Seq2Seq_EngFr.html"
+            %}
+
+    </ul>
+</div>
 
         <!--
         {% include card.html
