@@ -173,17 +173,42 @@ div.marcin_container{
     display: flex;
 }
 
-img.marcin_img {
+div.marcin_img{
+    margin: 20px;
+    align-content: center;
+}
+div.marcin_img img {
     /* float: left; */
     width: 200px;
     height: 200px;
-    margin: 20px;
     border: 2px solid #E2E2E2;
     border-radius: 3px;
 }
 
 div.marcin_text{
     margin: 20px;
+}
+
+div.footer_div{
+    border: 2px solid #E2E2E2;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+ul.social{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+ul.social img{
+    width: 32px;
+    height: 32px;
+    margin: 20px;
+    opacity: 0.8; filter: alpha(opacity=80);
 }
 
 /*nav ul, footer ul {
