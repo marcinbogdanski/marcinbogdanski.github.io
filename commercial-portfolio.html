@@ -18,8 +18,8 @@ layout: default
         
         {% include poster.html
             image="/assets/images/tool.jpg"
-            title="Test Title"
-            description="This is a test descriptoin which is quite longe becouse we need to test how it all works with a lot of text here"
+            title="Tool wear assessment for CNC router"
+            description='<p><b>Desc:</b> <a href="https://en.wikipedia.org/wiki/CNC_router">CNC Router</a> is a machine which uses rotational tool bit (drill) to remove material from solid block to manufacture a target part. Tool bits wear down and technicians often forget to check and replace them. This system automatically takes picture of tool bit before job is started and feeds it into convolutional neural network to classify current wear of the tool bit.</p><p><b>Tech:</b> Image classification is performed with DenseNet-201 which showed best performance out of tried architectures. CNN was pre-trained on ImageNet and trained any further. Classifier was trained on target dataset with heavy data augmentation and regularisation applied. After training network was able to detect cracked, chirped or overheated (changed color) tool bits.</p>'
             %}
 
         {% include poster.html
