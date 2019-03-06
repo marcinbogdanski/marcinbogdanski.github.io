@@ -13,7 +13,7 @@ layout: default
         {% include poster.html
             image="/assets/images/ugv.jpg"
             title="Self-driving software for Semi-Autonomous Unmanned Ground Vehicle"
-            description="<p><b>Desc:</b> In this project I was a principal software developer responsible for designing and implementing self-driving module for an Unmanned Ground Vehicle (UGV). Robot would navigate over GPS over predetermined routes, where obstacle avoidance module would be responsible for detecting unexpected obstacles like pedestrians, parked vehicles and similar (robot would use walking paths).</p><p><b>Tech:</b> Primary sensor was front facing monocular RGB camera (aka webcam). Images from camera were processed by two independent neural networks:<br/> • <b>YOLO</b> for object detection and localisation - pedestrians, parked vehicles etc. Network was trained on both pre-existing dataset as well as mix-in of our own training data.<br/> • <b>SegNet</b> for detecting if ground in front of vehicle is derivable (pavement, tarmac). Network was pre-trained on CityScapes with few added images.</p>"
+            description="<p><b>Desc:</b> In this project I was a principal software developer responsible for designing and implementing self-driving module for an Unmanned Ground Vehicle (UGV). Robot would navigate over GPS over predetermined routes, where obstacle avoidance module would be responsible for detecting unexpected obstacles like pedestrians, parked vehicles and similar (robot would use walking paths).</p><p><b>Tech:</b> Primary sensor was front facing monocular RGB camera (aka webcam). Images from camera were processed by two independent neural networks: 1) <b>YOLO</b> for object detection and localisation - pedestrians, parked vehicles etc. Network was trained on both pre-existing dataset as well as mix-in of our own training data. 2) <b>SegNet</b> for detecting if ground in front of vehicle is derivable (pavement, tarmac). Network was pre-trained on CityScapes with few added images.</p>"
             %}
         
         {% include poster.html
@@ -25,7 +25,7 @@ layout: default
         {% include poster.html
             image="/assets/images/mining.jpg"
             title="Interactive simulation for mining robot swarm"
-            description="<p><b>Desc:</b> The purpose of this project was to assess in detail performance of the swarm of 200+ mining and support robots. Swarm would start in containers, then deploy solar panels, build surface base, excavate tunnels, process raw materials and finally wind up operation. The complexity of the project was similar to simple strategy video game.</p><p><b>Tech:</b> Simulation is physics-based, build in Unity3D game engine along with set of plugins for procedural terrain generation (so robots can freely excavate). Individual robot AI manages energy, navigation, task queues etc. Swarm AI manages task allocation, robot coordination, excavation orders and similar.</p><p>At any point user can override high-level strategy or take over full control over individual robot.</p>"
+            description="<p><b>Desc:</b> The purpose of this project was to assess in detail performance of the swarm of 200+ mining and support robots. Swarm would start in containers, then deploy solar panels, build surface base, excavate tunnels, process raw materials and finally wind up operation. The complexity of the project was similar to simple strategy video game.</p><p><b>Tech:</b> Simulation is physics-based, build in Unity3D game engine along with set of plugins for dynamic volumetric terrain (so robots can freely excavate). Individual robot AI manages energy, navigation, task queues etc. Swarm AI manages task allocation, robot coordination, excavation orders and similar.</p><p>At any point user can override high-level strategy or take over full control over individual robot.</p>"
             %}
         
 
@@ -43,8 +43,8 @@ layout: default
         
         {% include poster.html
             image="/assets/images/spray.jpg"
-            title="Test Title"
-            description="This is a test descriptoin which is quite longe becouse we need to test how it all works with a lot of text here"
+            title="Drone for spraying protective coating on building walls"
+            description="<p>I lead engineering effort to design both software and hardware and to build and test this wall-spraying drone.</p><p>Drone is equipped with advanced control system to make it possible to operate at very close proximity to the building, while still giving pilot ability to operate with confidence and precision. To the best of my knowledge at the time of writing (early 2019) this is the only system of its kind in existence. </p><p>This project had substantial research component - literature review did not return feasible answers. Work required systematic experimentation and deep understanding. In the end I solved all the engineering problems and I did it in a way that is practical, cheap and easy to use.</p>"
             %}
         
         {% include poster.html
