@@ -19,7 +19,7 @@ layout: default
         {% include poster.html
             image="/assets/images/tool.jpg"
             title="Tool wear assessment for CNC router"
-            description='<p><b>Desc:</b> <a href="https://en.wikipedia.org/wiki/CNC_router">CNC Router</a> is a machine which uses rotational tool bit (drill) to remove material from solid block to manufacture a target part. Tool bits wear down and technicians often forget to check and replace them. This system automatically takes picture of tool bit before job is started and feeds it into convolutional neural network to classify current wear of the tool bit.</p><p><b>Tech:</b> Image classification is performed with DenseNet-201 which showed best performance out of tried architectures. CNN was pre-trained on ImageNet and trained any further. Classifier was trained on target dataset with heavy data augmentation and regularisation applied. After training network was able to detect cracked, chirped or overheated (changed color) tool bits.</p>'
+            description='<p><b>Desc:</b> <a href="https://en.wikipedia.org/wiki/CNC_router">CNC Router</a> is a machine which uses rotational tool bit (drill) to remove material from solid block to manufacture a target part. Tool bits wear down and technicians often forget to check and replace them. This system automatically takes picture of tool bit before job is started and feeds it into convolutional neural network to classify current wear of the tool bit.</p><p><b>Tech:</b> Image classification is performed with DenseNet-201 which showed best performance out of tried architectures. CNN was pre-trained on ImageNet and trained any further. Classifier was trained on target dataset with heavy data augmentation and regularisation applied. After training network was able to detect cracked, chirped or overheated (changed color) tool bits.</p><p>System is operating in a machine shop at the aerospace manufacturing facility.</p>'
             %}
 
         {% include poster.html
@@ -44,13 +44,13 @@ layout: default
         {% include poster.html
             image="/assets/images/spray.jpg"
             title="Drone for spraying protective coating on building walls"
-            description="<p>I lead engineering effort to design both software and hardware and to build and test this wall-spraying drone.</p><p>Drone is equipped with advanced control system to make it possible to operate at very close proximity to the building, while still giving pilot ability to operate with confidence and precision. To the best of my knowledge at the time of writing (early 2019) this is the only system of its kind in existence. </p><p>This project had substantial research component - literature review did not return feasible answers. Work required systematic experimentation and deep understanding. In the end we solved all the engineering problems and we did it in a way that is practical, cheap and easy to use.</p>"
+            description="<p>I lead engineering effort to design both software and hardware and to build and test this wall-spraying drone. Drone is equipped with advanced control system to make it possible to operate at very close proximity to the building, while still giving pilot ability to operate with confidence and precision. To the best of my knowledge at the time of writing (early 2019) this is the only system of its kind in existence. </p><p>This project had substantial research component - literature review did not return feasible answers. Work required systematic experimentation and deep understanding. In the end we solved all the engineering problems and we did it in a way that is practical, cheap and easy to use.</p><p>The drone is operating commercially</p>"
             %}
         
         {% include poster.html
             image="/assets/images/lidar.jpg"
-            title="Test Title"
-            description="This is a test descriptoin which is quite longe becouse we need to test how it all works with a lot of text here"
+            title="Industrial Drone for 3D laser scanning"
+            description='<p>I was lead software and hardware on this project. Drone purpose is to make highly detailed 3D scans of industrial sites. Subject to operating conditions drone was able to achieve 5-10cm precision on raw pointcloud. This is better than industry standard at the time (2018).</p><p>Drone is equipped with RTK GPS for positioning, high-end IMU and Lidar. Onboard computer is used for data recording. Custom software for 3D pointcloud synthesis was written from scratch.</p><p>The drone was deployed to scan jetty structure at <a href="https://en.wikipedia.org/wiki/Hinkley_Point_C_nuclear_power_station">Hinkley Point C</a> nuclear power station building site, which was the largest build site in the UK at the itme.</p>'
             %}
         
 
