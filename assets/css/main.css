@@ -6,6 +6,9 @@ body {
     margin: 60px auto;
     width: 95%;
     max-width: 1050px;
+    color: rgba(0, 0, 0, .8);
+    font-family: Arial, sans-serif;
+    /* font-family: Arial, Geneva, Helvetica, sans-serif; */
 }
 
 
@@ -100,7 +103,7 @@ ul.grid div.card_image img{
 
 ul.grid div.card_text{
     padding: 10px;
-    font-size: 80%;
+    font-size: 90%;
 }
 
 ul.grid div.card_text p.link{
@@ -158,7 +161,7 @@ ul.list div.poster_image img{
 ul.list div.poster_text{
     /* background: red; /**/
     margin: 10px;
-    font-size: 80%;
+    font-size: 90%;
 }
 
 
@@ -166,8 +169,22 @@ ul.list div.poster_text{
 /* background: red;  /**/
 /* border: 2px solid black;  /**/  
 
+div.marcin_container{
+    display: flex;
+}
 
+img.marcin_img {
+    /* float: left; */
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 2px solid #E2E2E2;
+    border-radius: 3px;
+}
 
+div.marcin_text{
+    margin: 20px;
+}
 
 /*nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
