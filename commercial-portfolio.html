@@ -12,8 +12,8 @@ layout: default
         
         {% include poster.html
             image="/assets/images/ugv.jpg"
-            title="Test Title"
-            description="This is a test descriptoin which is quite longe becouse we need to test how it all works with a lot of text here"
+            title="Self-driving software for Semi-Autonomous Unmanned Ground Vehicle"
+            description="<p><b>Desc:</b> In this project I was a principal software developer responsible for designing and implementing self-driving module for an Unmanned Ground Vehicle (UGV). Robot would navigate over GPS over predetermined routes, where obstacle avoidance module would be responsible for detecting unexpected obstacles like pedestrians, parked vehicles and similar (robot would use walking paths).</p><p><b>Tech:</b> Primary sensor was front facing monocular RGB camera (aka webcam). Images from camera were processed by two independent neural networks:<br/> • <b>YOLO</b> for object detection and localisation - pedestrians, parked vehicles etc. Network was trained on both pre-existing dataset as well as mix-in of our own training data.<br/> • <b>SegNet</b> for detecting if ground in front of vehicle is derivable (pavement, tarmac). Network was pre-trained on CityScapes with few added images.</p>"
             %}
         
         {% include poster.html
