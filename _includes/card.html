@@ -1,4 +1,4 @@
-<li>
+<li {% if include.link_href %} class="hover" {% endif %}>
     <div class="card_image">
         <a {% if include.link_href %} href="{{include.link_href}}" {% endif %}>
             <img src="{{include.image}}" alt="image"/>
