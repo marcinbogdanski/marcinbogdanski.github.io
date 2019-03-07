@@ -103,7 +103,7 @@ ul.grid div.card_image img{
 
 ul.grid div.card_text{
     padding: 10px;
-    font-size: 90%;
+    font-size: 85%;
 }
 
 ul.grid div.card_text p.link{
@@ -161,7 +161,7 @@ ul.list div.poster_image img{
 ul.list div.poster_text{
     /* background: red; /**/
     margin: 10px;
-    font-size: 90%;
+    font-size: 85%;
 }
 
 
