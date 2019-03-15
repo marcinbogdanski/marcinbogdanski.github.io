@@ -1,3 +1,107 @@
 ---
 layout: default
 ---
+
+
+
+
+{% include section.html
+    header="Multi-armed Bandits"
+    description="Implementation of algorithms from <b>Chapter 2</b> from the <em>Reinforcement Learning: An Introduction (2nd ed)</em>" %}
+
+
+<div>
+    <ul class="grid">
+
+
+        {% include card.html
+            image="/assets/images/rlintro/simple_bandit.jpg"
+            title="2.4 Simple Bandit"
+            description='Implementation of Simple Bandit Algorithm along with reimplementation of figures 2.1 and 2.2 from the book'
+            link_text="Simple Bandit"
+            link_href="https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0204_Simple_Bandit.html"
+            %}
+
+        {% include card.html
+            image="/assets/images/rlintro/tracking_bandit.jpg"
+            title="2.6 Tracking Bandit"
+            description='Implementation of Tracking Bandit Algorithm and recreation of figure 2.3 from the book'
+            link_text="Tracking Bandit"
+            link_href="https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0206_Tracking_Bandit.html"
+            %}
+
+    </ul>
+</div>
+
+{% include section.html
+    header="Dynamic Programming"
+    description="Implementation of algorithms from <b>Chapter 4</b> from the <em>Reinforcement Learning: An Introduction (2nd ed)</em>" %}
+
+<div>
+    <ul class="grid">
+
+        {% include card.html
+            image="/assets/images/rlintro/dynprog.jpg"
+            title="4.1 Iterative Policy Evaluation"
+            description='Implementation of Iterative policy Evaluation algorithm and demonstartion on <em>FrozenLake-v0</em> environment'
+            link_text="Iterative Policy Evaluation"
+            link_href="https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0401_Iterative_Policy_Evaluation.html"
+            %}
+
+        {% include card.html
+            image="/assets/images/rlintro/dynprog.jpg"
+            title="4.3 Policy Iteration"
+            description='Implementation of Policy Iteration algorithm and demonstartion on <em>FrozenLake-v0</em> environment'
+            link_text="Policy Iteration"
+            link_href="https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0403_Policy_Iteration.html"
+            %}
+
+        {% include card.html
+            image="/assets/images/rlintro/dynprog.jpg"
+            title="4.4 Value Iteration"
+            description='Implementation of Value Iteration algorithm and demonstartion on <em>FrozenLake-v0</em> environment'
+            link_text="Value Iteration"
+            link_href="https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0404_Value_Iteration.html"
+            %}
+
+    </ul>
+</div>
+
+{% include section.html
+    header="Monte Carlo Methods"
+    description="Implementation of algorithms from <b>Chapter 5</b> from the <em>Reinforcement Learning: An Introduction (2nd ed)</em>" %}
+
+<div>
+    <ul class="grid">
+
+
+        {% include card.html
+            image="/assets/images/rlintro/fig_0501.jpg"
+            title="5.1 First-Visit MC Prediction"
+            description='Implementation of First-Visit MC Prediction algorithm, recreation of figure 5.1 and demonstartion on <em>Blackjack-v0</em> environment'
+            link_text='First Visit MC Prediction'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0501_First_Visit_MC_Prediction.html'
+            %}
+
+        {% include card.html
+            image="/assets/images/rlintro/monte_carlo_es.jpg"
+            title="5.3 Monte Carlo ES Control"
+            description='Implementation of Monte Carlo ES Control algorithm, recreation of figure 5.2 and demonstartion on <em>Blackjack-v0</em> environment'
+            link_text='Monte Carlo ES Control'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0503_Monte_Carlo_ES_Control.html'
+            %}
+
+        {% include card.html
+            image="/assets/images/rlintro/blackjack.jpg"
+            title="5.4 On-Policy First-Visit MC Control"
+            description='Implementation of On-Policy First-Visit MC Control algorithm and demonstartion on <em>Blackjack-v0</em> environment'
+            link_text='On-Policy First-Visit MC Control'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0504_On_Policy_First_Visit_MC_Control.html'
+            %}
+
+
+
+
+
+    </ul>
+</div>
