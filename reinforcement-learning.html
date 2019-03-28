@@ -43,7 +43,7 @@ layout: default
         {% include card.html
             image="/assets/images/rlintro/dynprog.jpg"
             title="4.1 Iterative Policy Evaluation"
-            description='Implementation of Iterative policy Evaluation algorithm and demonstartion on <em>FrozenLake-v0</em> environment'
+            description='Implementation of Iterative policy Evaluation algorithm and demonstration on <em>FrozenLake-v0</em> environment'
             link_text="Iterative Policy Evaluation"
             link_href="https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0401_Iterative_Policy_Evaluation.html"
             %}
@@ -51,7 +51,7 @@ layout: default
         {% include card.html
             image="/assets/images/rlintro/dynprog.jpg"
             title="4.3 Policy Iteration"
-            description='Implementation of Policy Iteration algorithm and demonstartion on <em>FrozenLake-v0</em> environment'
+            description='Implementation of Policy Iteration algorithm and demonstration on <em>FrozenLake-v0</em> environment'
             link_text="Policy Iteration"
             link_href="https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0403_Policy_Iteration.html"
             %}
@@ -59,7 +59,7 @@ layout: default
         {% include card.html
             image="/assets/images/rlintro/dynprog.jpg"
             title="4.4 Value Iteration"
-            description='Implementation of Value Iteration algorithm and demonstartion on <em>FrozenLake-v0</em> environment'
+            description='Implementation of Value Iteration algorithm and demonstration on <em>FrozenLake-v0</em> environment'
             link_text="Value Iteration"
             link_href="https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0404_Value_Iteration.html"
             %}
@@ -78,7 +78,7 @@ layout: default
         {% include card.html
             image="/assets/images/rlintro/fig_0501.jpg"
             title="5.1 First-Visit MC Prediction"
-            description='Implementation of First-Visit MC Prediction algorithm, recreation of figure 5.1 and demonstartion on <em>Blackjack-v0</em> environment'
+            description='Implementation of First-Visit MC Prediction algorithm, recreation of figure 5.1 and demonstration on <em>Blackjack-v0</em> environment'
             link_text='First Visit MC Prediction'
             link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0501_First_Visit_MC_Prediction.html'
             %}
@@ -86,7 +86,7 @@ layout: default
         {% include card.html
             image="/assets/images/rlintro/monte_carlo_es.jpg"
             title="5.3 Monte Carlo ES Control"
-            description='Implementation of Monte Carlo ES Control algorithm, recreation of figure 5.2 and demonstartion on <em>Blackjack-v0</em> environment'
+            description='Implementation of Monte Carlo ES Control algorithm, recreation of figure 5.2 and demonstration on <em>Blackjack-v0</em> environment'
             link_text='Monte Carlo ES Control'
             link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0503_Monte_Carlo_ES_Control.html'
             %}
@@ -94,7 +94,7 @@ layout: default
         {% include card.html
             image="/assets/images/rlintro/blackjack.jpg"
             title="5.4 On-Policy First-Visit MC Control"
-            description='Implementation of On-Policy First-Visit MC Control algorithm and demonstartion on <em>Blackjack-v0</em> environment'
+            description='Implementation of On-Policy First-Visit MC Control algorithm and demonstration on <em>Blackjack-v0</em> environment'
             link_text='On-Policy First-Visit MC Control'
             link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0504_On_Policy_First_Visit_MC_Control.html'
             %}
@@ -102,6 +102,111 @@ layout: default
 
 
 
+
+    </ul>
+</div>
+
+{% include section.html
+    header="Temporal-Difference Learning"
+    description="Implementation of algorithms from <b>Chapter 6</b> from the <em>Reinforcement Learning: An Introduction (2nd ed)</em>" %}
+
+<div>
+    <ul class="grid">
+
+        {% include card.html
+            image="/assets/images/rlintro/tdprediction.jpg"
+            title="6.1 TD Prediction"
+            description='Implementation of TD Prediction algorithm, recreation of figure from example 6.2 and demonstration on <em>Blackjack-v0</em> environment'
+            link_text='TD Prediction'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0601_TD_Prediction.html'
+            %}
+
+        {% include card.html
+            image="/assets/images/rlintro/windygridworld2.jpg"
+            title="6.4 SARSA"
+            description='Implementation of SARSA algorithm, recreation of figure from example 6.5 and demonstration on <em>Windy Gridworld</em> environment'
+            link_text='SARSA'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0604_Sarsa.html'
+            %}
+
+        {% include card.html
+            image="/assets/images/rlintro/cliffwalking.jpg"
+            title="6.5 Q-Learning"
+            description='Implementation of Q-Learning algorithm and demonstration on <em>Cliff Walking</em> environment'
+            link_text='Q-Learning'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0605_Q_Learning.html'
+            %}
+
+    </ul>
+</div>
+
+
+{% include section.html
+    header="On-Policy Prediction with Approximation"
+    description="Implementation of algorithms from <b>Chapter 9</b> from the <em>Reinforcement Learning: An Introduction (2nd ed)</em>" %}
+
+<div>
+    <ul class="grid">
+
+        {% include card.html
+            image="/assets/images/rlintro/fig_0901.jpg"
+            title="9.3a Gradient Monte Carlo"
+            description='Implementation of Gradient MC algorithm, recreation of figure 9.1 and example 9.1 and demonstration on <em>Corridor</em> environment'
+            link_text='Gradient Monte Carlo'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0903a_Gradient_MC.html'
+            %}
+
+        {% include card.html
+            image="/assets/images/rlintro/fig_0902.jpg"
+            title="9.3b Semi-Gradient TD"
+            description='Implementation of Semi-Gradient TD algorithm, recreation of figure 9.2 and example 9.2 and demonstration on <em>Corridor</em> environment'
+            link_text='Semi-Gradient TD'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0903b_Semi_Gradient_TD.html'
+            %}
+
+        {% include card.html
+            image="/assets/images/rlintro/fig_0905.jpg"
+            title="9.5a Linear Models - Poly. and Fourier"
+            description='Implementation of Linear Models with Polynomial and Fourier bases, recreation of figure 9.5 and demonstration on <em>Corridor</em> environment'
+            link_text='Polynomial and Fourier Bases'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0905a_LM_Poly_Fourier.html'
+            %}
+
+        {% include card.html
+            image="/assets/images/rlintro/fig_0910.jpg"
+            title="9.5b Tile Coding"
+            description='Implementation of Linear Model with Tile Coding, recreation of figure 9.10 and demonstration on <em>Corridor</em> environment'
+            link_text='Tile Coding'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0905b_LM_Agg_Tile.html'
+            %}
+
+        {% include card.html
+            image="/assets/images/rlintro/ann.jpg"
+            title="Bonus: Basic ANN"
+            description='Implementation of Gradient MC with Artificial Neural Network function approximation and demonstration on <em>Corridor</em> environment'
+            link_text='Gradient MC ANN'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0907_ANN.html'
+            %}
+
+    </ul>
+</div>
+
+
+
+{% include section.html
+    header="On-Policy Control with Approximation"
+    description="Implementation of algorithms from <b>Chapter 10</b> from the <em>Reinforcement Learning: An Introduction (2nd ed)</em>" %}
+
+<div>
+    <ul class="grid">
+
+        {% include card.html
+            image="/assets/images/rlintro/mountaincar.jpg"
+            title="10.1 Episodic Semi-Gradient SARSA"
+            description='Implementation of Episodic Semi-Gradient SARSA algorithm, recreation of figures 10.1 and 10.2 and demonstration on <em>MountainCar-v0</em> environment'
+            link_text='Episodic Semi-Gradient SARSA'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/1001_Episodic_Semi_Gradient_Sarsa.html'
+            %}
 
     </ul>
 </div>
