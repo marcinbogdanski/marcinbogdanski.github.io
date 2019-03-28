@@ -210,3 +210,62 @@ layout: default
 
     </ul>
 </div>
+
+
+
+{% include section.html
+    header="UCL Course on RL (2016) by David Silver"
+    description="A bit more in-depth explanation of selected concepts from David Sivler video lectures and Sutton and Barto book." %}
+
+<div>
+    <ul class="grid">
+
+        {% include card.html
+            image="/assets/images/dslect/03_dynprog.jpg"
+            title="Lecture 3 - Dynamic Programming"
+            description='Dynamic Programming - Iterative Policy Evaluation, Policy Iteration, Value Iteration'
+            link_text='Dynamic Programming'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/UCL_Course_on_RL/Lecture03_DP/DynamicProgramming.html'
+            %}
+
+        {% include card.html
+            image="/assets/images/dslect/04a_mc_td.jpg"
+            title="Lecture 4a - MC and TD Prediction"
+            description='Monte Carlo and Temporal Difference Prediction'
+            link_text='MC and TD Prediction'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/UCL_Course_on_RL/Lecture04_Pred/ModelFreePrediction_Part1.html'
+            %}
+
+        {% include card.html
+            image="/assets/images/dslect/04b_fwd_back.jpg"
+            title="Lecture 4b - N-Step and TD(λ) Prediction"
+            description='Forward View TD(λ) and Backward View TD(λ) with Eligibility Traces'
+            link_text='N-Step and TD(λ) Prediction'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/UCL_Course_on_RL/Lecture04_Pred/ModelFreePrediction_Part2.html'
+            %}
+
+        {% include card.html
+            image="/assets/images/dslect/05_title.jpg"
+            title="Lecture 5a - On-Policy Control"
+            description='On-Policy Control algorithms: MC Control, SARSA, N-Step SARSA, Forward View SARSA(λ), Backward View SARSA(λ) with Eligibility Traces'
+            link_text='On-Policy Control'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/UCL_Course_on_RL/Lecture05_Ctrl/ModelFreeControl_Part1.html'
+            %}
+
+        {% include card.html
+            image="/assets/images/dslect/05b_exp_based.jpg"
+            title="Lecture 5b - Off-Policy - Exp. Based"
+            description='Off-Policy Control algorithms (Expectation Based): Q-Learning, Expected SARSA, Tree Backup Algorithm'
+            link_text='Off-Policy Control - Expectation Based'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/UCL_Course_on_RL/Lecture05_Ctrl/ModelFreeControl_Part2.html'
+            %}
+
+        {% include card.html
+            image="/assets/images/dslect/05c_imp_samp.jpg"
+            title="Lecture 5c - Off-Policy - Imp. Sampl."
+            description='Off-Policy Control algorithms (Importance Sampling) - Imp.Sampl. SARSA, N-Step Imp.Sampl. SARSA, Off-Policy MC Control'
+            link_text='Off-Policy Ctrl. - Importance Sampling'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/UCL_Course_on_RL/Lecture05_Ctrl/ModelFreeControl_Part3.html'
+            %}
+    </ul>
+</div>
