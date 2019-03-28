@@ -3,6 +3,36 @@ layout: default
 ---
 
 
+
+
+{% include section.html
+    header="Deep Q-Networks"
+    description="Implementation of DQN and application to Classic Control and Atari Games" %}
+
+
+<div>
+    <ul class="grid">
+
+        {% include card.html
+            image="/assets/images/dqn/lunarlander.gif"
+            title="DQN Classic Control"
+            description='Use DQN to solve OpenAI Classic Control environments: MountainCar, Pendulum, CartPole, Acrobot and LunarLander'
+            link_text='DQN Classic Control'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/Deep_Q_Network/1010_DQN_ClassicControl.html'
+            %}
+
+        {% include card.html
+            image="/assets/images/dqn/spaceinvaders.gif"
+            title="Playing Atari with Deep RL"
+            description='Reproduction of pivotal "Playing Atari with Deep Reinforcement Learning" paper by DeepMind published in 2013.<br/><b>Code not cleaned up.</b>'
+            link_text='DQN Atari 2013'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/Deep_Q_Network/2010_DQN_Atari2013.html'
+            %}
+
+    </ul>
+</div>
+
+
 {% include section.html
     header="Reinforcement Learning: An Introduction (2nd ed)"
     description="Implementation of algorithms from <b>Sutton and Barto</b> book <em>Reinforcement Learning: An Introduction (2nd ed)</em>" %}
@@ -11,7 +41,6 @@ layout: default
 {% include section.html
     header=""
     description="<b>Chapter 2: Multi-armed Bandits</b>" %}
-
 
 <div>
     <ul class="grid">
@@ -101,10 +130,6 @@ layout: default
             link_text='On-Policy First-Visit MC Control'
             link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/0504_On_Policy_First_Visit_MC_Control.html'
             %}
-
-
-
-
 
     </ul>
 </div>
@@ -272,3 +297,5 @@ layout: default
             %}
     </ul>
 </div>
+
+
