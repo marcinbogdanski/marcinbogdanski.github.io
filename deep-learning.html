@@ -11,9 +11,9 @@ layout: default
     <ul class="grid">
 
         {% include card.html
-            image="/assets/images/college.jpg"
+            image="/assets/images/college2.jpg"
             title="College Admissions"
-            description="2-Layer fully connected neural network used to solve college admissions problem. Task is to predict if student is admited or not based no theirs GPC & GPA scores"
+            description="2-Layer fully connected neural network used to solve binary classification task. Aim is to predict if student is admitted or not based no theirs GPC & GPA scores"
             link_text="Keras"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/0100_MLP_College.html"
             link_2_text="PyTorch"
@@ -21,8 +21,8 @@ layout: default
             %}
 
         {% include card.html
-            image="/assets/images/mnist.jpg"
-            title="MNIST"
+            image="/assets/images/mnist2.jpg"
+            title="MNIST Handwritten Digits"
             description="2-Layer fully connected neural network used to solve popular MNIST dataset. MNIST is set of 60k images. Each one is 28x28 grayscale"
             link_text="Keras"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/0120_MLP_MNIST.html"
@@ -31,9 +31,9 @@ layout: default
             %}
 
         {% include card.html
-            image="/assets/images/imdb.jpg"
+            image="/assets/images/imdb2.jpg"
             title="IMDB Movie Reviews"
-            description="Small fully connected neural network used to predict if movie review is positive or negative. Uses bag-of-words approach."
+            description="2-layer fully connected neural network used to solve IMDB movie reviews dataset. Uses bag-of-words approach."
             link_text="Keras"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/0150_MLP_IMDB.html"
             link_2_text="PyTorch"
@@ -54,41 +54,40 @@ layout: default
 
         {% include card.html
             image="/assets/images/1layer.jpg"
-            title="One layer classification."
-            description="Single-Layer Perceptron used to solve college admission problem."
+            title="Perceptron - Classification"
+            description="Single-Layer Perceptron used to solve binary classification task. Trained on college admission dataset."
             link_text="NumPy"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/NumpyNN/0010_FC_1Layer.html"
             %}
 
         {% include card.html
             image="/assets/images/2layer.jpg"
-            title="2-Layer MLP Regression"
-            description="Feedforward Multi-Layer Perceptron used to solve bike-rental problem."
+            title="Feedforward - Regression"
+            description="Feedforward Multi-Layer Perceptron used to solve regression task. Trained on bike-rental dataset."
             link_text="NumPy"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/Udacity_DL_Nanodegree/011%20Bike%20Project/Bike+Project.html"
             %}
 
-
         {% include card.html
             image="/assets/images/2layer.jpg"
-            title="2-Layer MLP Classification"
-            description="Feedforward Multi-Layer Perceptron used to solve Fashion-MNIST."
+            title="Feedforward - Classification"
+            description="Feedforward Multi-Layer Perceptron used to solve image classification task. Trained on Fashion-MNIST dataset."
             link_text="NumPy"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/NumpyNN/0020_FC_2LayerClass.html"
             %}
 
         {% include card.html
             image="/assets/images/rnn.jpg"
-            title="RNN Counter (unfolded)"
-            description="Recurent Neural Network used to count occurances of letter 'a' in a short string. This RNN is implemented both unfloded and recurrently."
+            title="RNN - Counter"
+            description="Recurrent Neural Network used as a counter. This RNN has many-to-one arrangement. Dataset is synthetic. Both unfolded and recurrent implementations."
             link_text="NumPy"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/NumpyNN/1010_Char_RNN_Unfolded.html"
             %}
 
         {% include card.html
             image="/assets/images/rnn.jpg"
-            title="RNN Dino name generator"
-            description="Character-level Recurent Neural Network used to generate novel dinosaur names."
+            title="RNN - Text Generation"
+            description="Character-level Recurrent Neural Network used to generate novel text. This RNN has many-to-many arrangement. Dataset is composed of 300 dinosaur names."
             link_text="NumPy"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/NumpyNN/1020_Char_RNN_Dinosaurs.html"
             %}
@@ -108,24 +107,24 @@ layout: default
 
         {% include card.html
             image="/assets/images/cnn.jpg"
-            title="ConvNet and CIFAR-10"
+            title="Convolutional Network"
             description="Small convolutional neural network used for image classification on the CIFAR-10 dataset. Images are RGB 32x32 pixels."
             link_text="Keras"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1100_CNN_CIFAR10.html"
             %}
 
         {% include card.html
-            image="/assets/images/batchnorm.jpg"
-            title="Batch Normalization"
-            description="Small convnet with batch normalization used on CIFAR-10 dataset."
+            image="/assets/images/batchnorm2.jpg"
+            title="Batch Normalisation"
+            description="Small convnet with batch normalisation used on CIFAR-10 dataset."
             link_text="Keras"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1200_CNN_BN_CIFAR10.html"
             %}
 
         {% include card.html
             image="/assets/images/dataaug.jpg"
-            title="Data Augumentation"
-            description="Small convnet with data augumentation to reduce overfitting on CIFAR-10 dataset."
+            title="Data Augmentation"
+            description="Small convnet with data augmentation to reduce overfitting on CIFAR-10 dataset."
             link_text="Keras"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1250_Aug_CIFAR10.html"
             %}
@@ -133,16 +132,16 @@ layout: default
 
 
         {% include card.html
-            image="/assets/images/resblock.jpg"
-            title="ResNet-50 from Scratch"
+            image="/assets/images/resblock2.jpg"
+            title="ResNet from Scratch"
             description="ResNet-50 implemented from scratch using Keras functional API. Then trained from scratch on Oxford VGG Flowers 17 dataset."
             link_text="Keras"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1300_ResNet50_Scratch.html"
             %}
 
         {% include card.html
-            image="/assets/images/resblock.jpg"
-            title="ResNet-50 Transfer Learning"
+            image="/assets/images/resblock2.jpg"
+            title="Transfer Learning"
             description="ResNet-50 from Keras library pre-trained on ImageNet is further trained on Oxford VGG Flowers 17 dataset."
             link_text="Keras"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1400_ResNet50_Transfer.html"
@@ -152,7 +151,7 @@ layout: default
 
         {% include card.html
             image="/assets/images/densenet.jpg"
-            title="DenseNet-201 Transfer Learning"
+            title="Transfer Learning"
             description="DenseNet-201 trained on Oxford VGG Flowers 102 dataset."
             link_text="PyTorch"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/1450_PT_DenseNet121_Transfer.html"
@@ -160,15 +159,15 @@ layout: default
 
         {% include card.html
             image="/assets/images/densenet.jpg"
-            title="DenseNet-201 Bottleneck Features"
-            description="DenseNet-201 trained on Oxford VGG Flowers 102 dataset. This time bottleneck features are pre-computed and only classifier is trianed."
+            title="Bottleneck Features"
+            description="Pre-trained DenseNet-201 is further trained on Oxford VGG Flowers 102 dataset. Bottleneck features are extracted and only classifier is trained."
             link_text="PyTorch"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/1450_PT_DenseNet121_Transfer_2.html"
             %}
 
         {% include card.html
-            image="/assets/images/segnet.jpg"
-            title="Segnet and VOC2007"
+            image="/assets/images/segnet2.jpg"
+            title="Image Segmentation"
             description="Segnet on VGG16 backbone trained on Pascal VOC2007 dataset."
             link_text="PyTorch"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/1630_PT_SegNet_VOC2007.html"
@@ -186,25 +185,25 @@ layout: default
     <ul class="grid">
 
         {% include card.html
-            image="/assets/images/rnn_m2m.jpg"
-            title="RNN - Time Series Prediction"
+            image="/assets/images/rnn_m2m2.jpg"
+            title="Time Series Prediction"
             description="Vanilla RNN trained to perform time series prediction on sine wave."
             link_text="PyTorch"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/2120_PT_Float_RNN_M2M_TimeSeries.html"
             %}
 
         {% include card.html
-            image="/assets/images/rnn_m2m.jpg"
-            title="Char-LSTM - Shakespeare"
-            description="LSTM trained to generate new text trained on Shakespeare plays."
+            image="/assets/images/rnn_m2m2.jpg"
+            title="Text Generation"
+            description="Char-level LSTM trained to generate new text trained on Shakespeare plays."
             link_text="PyTorch"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/2140_PT_Char_LSTM_M2M_Shakespeare.html"
             %}
 
 
         {% include card.html
-            image="/assets/images/skipgram.jpg"
-            title="Word2Vec Skipgram - Wiki8"
+            image="/assets/images/skipgram2.jpg"
+            title="Word2Vec Skipgram"
             description="Example how to train embedding layer using Word2Vec Skipgram. Trained on popular wiki8 dataset"
             link_text="PyTorch"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/2050_PT_SkipGram_Text8.html"
@@ -212,26 +211,26 @@ layout: default
 
 
         {% include card.html
-            image="/assets/images/rnn_m2o.jpg"
-            title="Word-LSTM - IMDB Sentiment"
-            description="LSTM trained to generate predict if movie review is positive or negative."
+            image="/assets/images/rnn_m2o2.jpg"
+            title="Sentiment Analysis"
+            description="Word-level LSTM trained to generate predict if movie review is positive or negative. Uses IMDB Movie Reviews dataset"
             link_text="PyTorch"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/2210_PT_Word_LSTM_M2O_IMBD.html"
             %}
 
 
         {% include card.html
-            image="/assets/images/rnn_m2m.jpg"
-            title="Many-2-Many - Language Translation"
-            description="Many-to-many LSTM trained to perform English to French translation."
+            image="/assets/images/rnn_m2m2.jpg"
+            title="Language Translation (basic)"
+            description="Many-to-many LSTM trained to perform English to French translation. Input and output sequences of same length."
             link_text="Keras"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/2210_Many2Many_EngFr.html"
             %}
 
         {% include card.html
-            image="/assets/images/rnn_s2s.jpg"
-            title="Seq-2-Seq - Language Translation"
-            description="Sequence-to-sequence LSTM trained to perform English to French translation."
+            image="/assets/images/rnn_s2s2.jpg"
+            title="Language Translation (seq2seq)"
+            description="Sequence-to-sequence LSTM trained to perform English to French translation. Input and output sequences of arbitrary length."
             link_text="Keras"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/2310_Seq2Seq_EngFr.html"
             %}
@@ -249,7 +248,7 @@ layout: default
     <ul class="grid">
 
         {% include card.html
-            image="/assets/images/autoencoder.jpg"
+            image="/assets/images/autoencoder3.jpg"
             title="Autoencoder"
             description="Simple autoencoder trained on MNIST dataset."
             link_text="Keras"
@@ -257,7 +256,7 @@ layout: default
             %}
 
         {% include card.html
-            image="/assets/images/gan.jpg"
+            image="/assets/images/gan2.jpg"
             title="GAN"
             description="Fully connected Generative Adversarial Network trained on MNIST dataset."
             link_text="Keras"
@@ -265,7 +264,7 @@ layout: default
             %}
 
         {% include card.html
-            image="/assets/images/dcgan.jpg"
+            image="/assets/images/dcgan2.jpg"
             title="DCGAN"
             description="Deep Convolutional GAN trained on CelebA dataset."
             link_text="PyTorch"
