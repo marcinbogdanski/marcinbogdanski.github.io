@@ -41,6 +41,11 @@ nav ul li a {
   text-transform: uppercase;
 }
 
+nav ul li a.current {
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+
 nav ul li a:hover {
   background-color: #eeeeee;
 }
