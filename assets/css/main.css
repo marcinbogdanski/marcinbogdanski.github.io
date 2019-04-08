@@ -169,6 +169,15 @@ ul.list div.poster_text{
     font-size: 85%;
 }
 
+ul.list div.poster_text span.title{
+    font-weight: bold;
+}
+
+ul.list div.poster_text span.customer{
+    font-weight: bold;
+    float: right;
+}
+
 
 /* debug /**/
 /* background: red;  /**/
