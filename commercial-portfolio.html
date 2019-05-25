@@ -10,6 +10,14 @@ layout: default
     <ul class="list">
 
         {% include poster.html
+            class="gold"
+            image="/assets/images/portfolio/signs.png"
+            title="Parking sign detection and recognition"
+            description="<p><b>Description:</b> Parking signs in Australia are notoriously complicated. The project was to build a proof-of-concept vision system to detect and recognise a signs from mobile phone and deliver verdict to user whether they can park at the location.</p><p><b>Technology:</b> The system uses customised state-of-the-art multi-stage neural network for detection.  The main challenge was working with tiny data set and large variety of backgrounds, lighting and weather conditions and obstructions. System was deployed for production on Amazon EC2</p><div><div style='width:80%; float:left'>This project won <b>first place</b> and monetary <b>prize $20,000</b> at the Melbourne Knowledge Week. I was fully responsible for AI technology, the demo was delivered by the customer.</div><img src='/assets/images/portfolio/medal2.png' style='float: right;' /></div>"
+            %}
+
+
+        {% include poster.html
             image="/assets/images/portfolio/turbine2.png"
             title="Automated wind turbine fault detection"
             description="<p><b>Description:</b><br/> This project is a proof-of-concept neural architecture for automated fault detection on high resolution images of wind turbine blades. I provided know-how via ongoing consulting as well as developed actual software for data pre-processing and model training and testing. The customer provided images and preliminary labels in a raw format. Large part of the project was to browse, clean, select and label data provided so it can be feed into machine learning component.</p><p><b>Technology:</b><br/> Due to unique technical challenges encountered, two non-standard components were developed: <br/>&nbsp;&nbsp;&nbsp; 1) a completely custom pre-processing pipeline to deal characteristics of input data <br/>&nbsp;&nbsp;&nbsp; 2) far-going optimisation of neural network subsystem to allow for fast training time.</p>"

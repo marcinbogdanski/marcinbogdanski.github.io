@@ -150,6 +150,11 @@ ul.list li {
     display: flex;
 }
 
+ul.list li.gold{
+    border: 2px solid #FFD700;
+    background-color: #FAFAD2;
+}
+
 
 ul.list div.poster_image{    
     /* background: purple; /**/
