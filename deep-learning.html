@@ -79,7 +79,7 @@ layout: default
         {% include card.html
             image="/assets/images/rnn.jpg"
             title="RNN - Counter"
-            description="Recurrent Neural Network used as a counter. This RNN has many-to-one arrangement. Dataset is synthetic. Both unfolded and recurrent implementations."
+            description="Recurrent Neural Network used as a counter. This RNN has many-to-one arrangement. Dataset is synthetic. Both unfolded and recurrent implementations. <br /> <b>Code not tidied.</b>"
             link_text="NumPy"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/NumpyNN/1010_Char_RNN_Unfolded.html"
             %}
@@ -87,7 +87,7 @@ layout: default
         {% include card.html
             image="/assets/images/rnn.jpg"
             title="RNN - Text Generation"
-            description="Character-level Recurrent Neural Network used to generate novel text. This RNN has many-to-many arrangement. Dataset is composed of 300 dinosaur names."
+            description="Character-level Recurrent Neural Network used to generate novel text. This RNN has many-to-many arrangement. Dataset is composed of 300 dinosaur names.<br /> <b>Code not tidied.</b>"
             link_text="NumPy"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/NumpyNN/1020_Char_RNN_Dinosaurs.html"
             %}
@@ -100,7 +100,7 @@ layout: default
 
 {% include section.html
     header="Computer Vision"
-    description="Various computer vision architectures" %}
+    description="Vision Basics" %}
 
 <div>
     <ul class="grid">
@@ -148,24 +148,6 @@ layout: default
             %}
 
         {% include card.html
-            image="/assets/images/resblock2.jpg"
-            title="Transfer Learning"
-            description="ResNet-50 from Keras library pre-trained on ImageNet is further trained on Oxford VGG Flowers 17 dataset."
-            link_text="Keras"
-            link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1400_ResNet50_Transfer.html"
-            %}
-
-
-
-        {% include card.html
-            image="/assets/images/densenet.jpg"
-            title="Transfer Learning"
-            description="DenseNet-201 trained on Oxford VGG Flowers 102 dataset."
-            link_text="PyTorch"
-            link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/1450_PT_DenseNet121_Transfer.html"
-            %}
-
-        {% include card.html
             image="/assets/images/densenet.jpg"
             title="Bottleneck Features"
             description="Pre-trained DenseNet-201 is further trained on Oxford VGG Flowers 102 dataset. Bottleneck features are extracted and only classifier is trained."
@@ -173,8 +155,27 @@ layout: default
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/1450_PT_DenseNet121_Transfer_2.html"
             %}
 
+    </ul>
+</div>
+{% include section.html
+    header=""
+    description="Mini Projects" %}
+<div>
+    <ul class="grid">
+
         {% include card.html
-            image="/assets/images/mobilenet.png"
+            image="/assets/images/deeplearning/vggflower17.png"
+            title="Image Classification"
+            description="Keras: ResNet-50 trained on Oxford VGG Flower 17 dataset.<br />PyTorch: DenseNet-201 trained on Oxford VGG Flower 102 dataset."
+            link_text="Keras"
+            link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/1400_ResNet50_Transfer.html"
+            link_2_text="PyTorch"
+            link_2_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/1450_PT_DenseNet121_Transfer.html"
+            %}
+
+
+        {% include card.html
+            image="/assets/images/deeplearning/keypoints.png"
             title="Keypoint Detection"
             description="Pre-trained MobileNetV2 is used for keypoint detection on CATs dataset."
             link_text="Keras"
@@ -182,7 +183,7 @@ layout: default
             %}
 
         {% include card.html
-            image="/assets/images/segnet2.jpg"
+            image="/assets/images/deeplearning/segnet_moto.png"
             title="Image Segmentation"
             description="Segnet on VGG16 backbone trained on Pascal VOC2007 dataset."
             link_text="PyTorch"
