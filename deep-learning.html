@@ -196,7 +196,7 @@ layout: default
 
 {% include section.html
     header="Natural Language Processing"
-    description="Various recurrent architectures for NLP" %}
+    description="NLP Basics" %}
 
 <div>
     <ul class="grid">
@@ -226,29 +226,30 @@ layout: default
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/2050_PT_SkipGram_Text8.html"
             %}
 
+    </ul>
+</div>
+{% include section.html
+    header=""
+    description="Mini Projects" %}
+
+<div>
+    <ul class="grid">
 
         {% include card.html
-            image="/assets/images/rnn_m2o2.jpg"
+            image="/assets/images/deeplearning/sentiment.png"
             title="Sentiment Analysis"
             description="Word-level LSTM trained to generate predict if movie review is positive or negative. Uses IMDB Movie Reviews dataset"
             link_text="PyTorch"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/PyTorchNN/2210_PT_Word_LSTM_M2O_IMBD.html"
             %}
 
-
         {% include card.html
-            image="/assets/images/rnn_m2m2.jpg"
-            title="Language Translation (basic)"
-            description="Many-to-many LSTM trained to perform English to French translation. Input and output sequences of same length."
-            link_text="Keras"
+            image="/assets/images/deeplearning/translation.png"
+            title="Language Translation"
+            description="Two models are trained to perform English to French translation. <br />• Many-to-Many (m2m)<br />• Sequence-to-Sequence (s2s)"
+            link_text="Keras (m2m)"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/2210_Many2Many_EngFr.html"
-            %}
-
-        {% include card.html
-            image="/assets/images/rnn_s2s2.jpg"
-            title="Language Translation (seq2seq)"
-            description="Sequence-to-sequence LSTM trained to perform English to French translation. Input and output sequences of arbitrary length."
-            link_text="Keras"
+            link_text="Keras (s2s)"
             link_href="https://marcinbogdanski.github.io/ai-sketchpad/KerasNN/2310_Seq2Seq_EngFr.html"
             %}
 
@@ -281,7 +282,7 @@ layout: default
             %}
 
         {% include card.html
-            image="/assets/images/dcgan2.jpg"
+            image="/assets/images/deeplearning/ganfaces2.png"
             title="DCGAN"
             description="Deep Convolutional GAN trained on CelebA dataset."
             link_text="PyTorch"
