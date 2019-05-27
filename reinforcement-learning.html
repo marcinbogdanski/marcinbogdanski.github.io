@@ -4,10 +4,15 @@ layout: default
 
 
 
-
+<!--
 {% include section.html
     header="Deep Q-Networks"
     description="Implementation of DQN and application to Classic Control and Atari Games" %}
+-->
+
+{% include section.html
+    header="Highlighted Projects"
+    description="" %}
 
 
 <div>
@@ -24,9 +29,16 @@ layout: default
         {% include card.html
             image="/assets/images/dqn/spaceinvaders.gif"
             title="Playing Atari with Deep RL"
-            description='Reproduction of pivotal "Playing Atari with Deep Reinforcement Learning" paper by DeepMind published in 2013.<br/><b>Code not cleaned up.</b>'
+            description='Reproduction of DeepMind pivotal paper <i>"Playing Atari with Deep Reinforcement Learning" (2013)</i>.<br/><b>Code not tidied, results coming soon.</b>'
             link_text='DQN Atari 2013'
             link_href='https://marcinbogdanski.github.io/rl-sketchpad/Deep_Q_Network/2010_DQN_Atari2013.html'
+            %}
+
+        {% include card.html
+            image="/assets/images/dqn/othello2.png"
+            title="AlphaZero playing Othello"
+            description='Reproduction of DeepMind AlphaZero paper <i>"A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play" (2018)</i>.<br/><b>Code and results coming soon.</b>'
+            
             %}
 
     </ul>
