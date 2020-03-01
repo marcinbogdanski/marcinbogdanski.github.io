@@ -278,6 +278,34 @@ layout: default
 
 
 {% include section.html
+    header=""
+    description="<b>Chapter 13: Policy Gradient Methods</b>" %}
+
+<div>
+    <ul class="grid">
+
+        {% include card.html
+            image="/assets/images/rlintro/fig_1301.jpg"
+            title="13.3 REINFORCE: MC Policy Gradient"
+            description='Implementation of REINFORCE algorithm, recreation of figure 13.1 and demonstration on <em>Corridor with switched actions</em> environment'
+            link_text='REINFORCE'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/1303_REINFORCE.html'
+            %}
+        
+        {% include card.html
+            image="/assets/images/rlintro/fig_1302.jpg"
+            title="13.4 REINFORCE with Baseline"
+            description='Implementation of REINFORCE with Baseline algorithm, recreation of figure 13.4 and demonstration on <em>Corridor with switched actions</em> environment'
+            link_text='REINFORCE with Baseline'
+            link_href='https://marcinbogdanski.github.io/rl-sketchpad/RL_An_Introduction_2018/1304_REINFORCE_With_Baseline.html'
+            %}
+
+    </ul>
+</div>
+
+
+
+{% include section.html
     header="UCL Course on RL (2016) by David Silver"
     description="A more in-depth treatment of selected concepts from David Sivler video lectures and Sutton and Barto book. This is advanced material." %}
 
